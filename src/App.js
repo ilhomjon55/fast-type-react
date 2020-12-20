@@ -9,7 +9,7 @@ function App() {
 		timeRemaining,
 		startGame,
 		wordCount,
-	} = useWordGame(5);
+	} = useWordGame(60);
 
 	return (
 		<div>
@@ -25,6 +25,13 @@ function App() {
 				Start
 			</button>
 			<h1>Word count: {wordCount}</h1>
+
+			<p className='coding_show'>
+				&copy; Copyright{' '}
+				<a href='https://t.me/coding_show' target='_blank'>
+					Coding Show
+				</a>
+			</p>
 		</div>
 	);
 }
